@@ -1,0 +1,14 @@
+            - name: GKI Kernel Module Build Action
+  # You may pin to the exact commit or the version.
+  # uses: feicong/android-kernel-build-action@d8375ba3f3dcaa294fbaffebb5693fd4e16e7f9e
+  uses: feicong/android-kernel-build-action@v1
+  with:
+    # Specify the Android kernel version and tag to build for (e.g., android13-5.15).
+    tag: android12-5.10.168
+    # Specify the architecture to build for (e.g., aarch64 or x86_64).
+    arch: # default is aarch64
+    # Specify the name of the kernel module artifact.
+    module-path: emerald
+    # Specify the name of the kernel module.
+    module-name: emerald
+          
